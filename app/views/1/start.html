@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <form action="card-payment" method="post" class="form">
+
+	    <h1 class="heading-xlarge">
+	    Pay for government service
+	    </h1>
+	    <p>
+	    You can pay online for your application. Once you have successful paid, you will receive a reference number. Include the reference number with your application as proof of payment.
+	    </p>
+	    
+		<div class="form-group">
+		    <label class="form-label-bold" for="payment-description">Payment description
+			    <span class="form-hint">
+				The name of the application you are paying for
+			    </span>
+		    </label>
+		    <input class="form-control form-control-3-4" id="payment-description" name="payment-description" type="text">
+		    </input>
+		</div>	
+
+		<div class="form-group">    
+		    <label class="form-label-bold" for="amount-paid">Amount you want to pay</label>
+		    £
+		    <input class="form-control form-control-1-4" id="amount-paid" name="amount-paid" type="text">
+		</div>
+        <div class="form-group">
+        	<input type="submit" class="button" value="Proceed to payment">
+        </div>
+
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}
+
+
