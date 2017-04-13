@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <form action="start-2" method="post" class="form">
+
+	    <h1 class="heading-xlarge">
+	    Pay for application for nationality
+	    </h1>
+	    <p>
+	    You will need the reference number included in the email. 
+	    </p>
+	    
+		<div class="form-group">
+		    <label class="form-label-bold" for="ref-number">Reference number
+			    <span class="form-hint">
+				For example: QQ 123 456 A
+			    </span>
+		    </label>
+		    <input class="form-control form-control-3-4" id="ref-number" name="ref-number" type="text">
+		    </input>
+		</div>	
+
+		<div class="form-group">    
+		    <label class="form-label-bold" for="email">Surname<span class="form-hint">
+				This should be the name on your application
+			    </span></label>
+		    <input class="form-control form-control-3-4" id="email" name="email" type="text">
+		</div>
+
+        <div class="form-group">
+        	<input type="submit" class="button" value="Continue">
+        </div>
+
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}
+
+

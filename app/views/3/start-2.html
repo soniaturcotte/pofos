@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <form action="card-payment" method="post" class="form">
+
+    <h1 class="heading-xlarge">
+    Review payment details
+    </h1>
+
+    <h2 class="heading-medium">
+    Your reference number: {{data['ref-number']}}
+    </h2>
+		
+    <div class="panel panel-border-wide">
+      <table class="check-your-answers">
+        <!-- <thead>
+          <tr>
+            <th colspan="1">Your reference number</th>
+            <th colspan="1">{{data['ref-number']}}</th>
+          </tr>
+        </thead> -->
+
+        <tbody>
+          <tr>
+            <td>You owe:
+              <div class="data">
+                <span class="data-item bold-xlarge">£2,502.00</span>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Description:</td>
+            <td>Pay for application for nationality</td>
+          </tr> 
+          <tr>
+            <td>Name:</td>
+            <td>John Smith</td>
+          </tr> 
+          <tr>
+            <td>Email:</td>
+            <td>example@email.com</td>
+          </tr> 
+
+        </tbody>
+      </table>  
+    </div> 
+    
+    </br>
+		<div class="form-group">
+      <input type="submit" class="button" value="Proceed to payment">
+    </div>
+
+    <details>  
+      <summary><span class="summary">This information is incorrect</span></summary>
+    </details>
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}
+
+
