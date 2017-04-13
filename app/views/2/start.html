@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <form action="card-payment" method="post" class="form">
+
+	    <h1 class="heading-xlarge">
+	    Pay for military service records
+	    </h1>
+
+	    <p>You can apply for the records of someone who’s deceased if you’re eligible, for example you’re their immediate next of kin or you’re researching them.</p>
+
+      <p>It can take several months for your application to be processed.</p>
+		  
+
+      <div class="panel panel-border-wide">
+        <h2 class="heading-medium">Total amount:</h3>
+        <p>£30.00</p>
+      </div> 
+
+		<div class="form-group">
+      <input type="submit" class="button" value="Proceed to payment">
+    </div>
+
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}
+
+

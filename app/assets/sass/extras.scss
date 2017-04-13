@@ -1,0 +1,29 @@
+@import 'govuk-elements';
+
+
+.heading-xlarge {
+	margin-bottom: 
+	30px;
+}
+
+// Card payment page //
+
+.accepted-image {
+  position: relative;
+  max-width: 340px;
+  margin: -20px 0 5px 0;
+}
+
+.payment-summary {
+	position: fixed;
+	width: 250px;
+	margin-top: 30px;
+	border: 10px solid #DEE0E2;
+	background-color: #F8F8F8;
+	padding: 15px;
+}
+
+.payment-summary h2 {
+	margin-top: 5px;
+}
+
