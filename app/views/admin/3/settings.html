@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+<!-- Top navigation -->
+
+<div class="grid-row">
+    <div class="utility-nav">
+	    <div class="column-half">
+			<div class="service-name">
+				<h2>Service name</h2>
+				<div class="environment-tag"> 
+					<p>Live</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column-half">
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Transactions</a></li>
+				<li><a class="utility-active" href="#">Settings</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+
+<!-- Left navigation -->
+<div class="grid-row">
+	<div class="column-one-third">
+		<div class="left-nav">
+		    <ul>
+			    <li><a href="#">Service name</a></li>
+			    <li><a href="#">API keys</a></li>
+			    <li><a href="#">Email notifications</a></li>
+			    <li><a href="#">3D Secure</a></li>
+			    <li><a class="active-left-nav" href="#">Set up payment link</a></li>
+		    </ul>
+		</div>
+	</div>
+
+<!-- Page content -->
+	<div class="column-two-thirds">
+		<h2 class="heading-large">Set up a payment link</h2>
+
+		<form action="confirm" method="post" class="form">
+
+		<div class="form-group">
+		    <label class="form-label-bold" for="ref-number">Reference number
+			    <!-- <span class="form-hint">
+			    	For example: 
+			    </span> -->
+		    </label>
+		    <input class="form-control form-control-2-3" id="ref-number" name="ref-number" type="text">
+		    </input>
+		</div>
+
+		<div class="form-group">
+		    <label class="form-label-bold" for="name">Applicant name
+			    <!-- <span class="form-hint">
+			    	For example: 
+			    </span> -->
+		    </label>
+		    <input class="form-control form-control-2-3" id="name" name="name" type="text">
+		    </input>
+		</div>
+
+		<div class="form-group">
+		    <label class="form-label-bold" for="email">Email
+			    <!-- <span class="form-hint">
+			    	Applicant will receive
+			    </span> -->
+		    </label>
+		    <input class="form-control form-control-2-3" id="email" name="email" type="text">
+		    </input>
+		</div>
+
+		<div class="form-group">
+		    <label class="form-label-bold" for="description">Payment description
+			    <span class="form-hint">
+			    	As it appears on the user facing payment screens  
+			    </span>
+		    </label>
+		    <input class="form-control form-control-2-3" id="description" name="description" type="text">
+		    </input>
+		</div>
+
+
+		<div class="form-group">    
+		    <label class="form-label-bold" for="amount-paid">Amount owed</label>
+		    £
+		    <input class="form-control form-control-1-4" id="amount-owed" name="amount-owed" type="text">
+		</div>
+
+		<div class="panel panel-border-wide">
+		    <p>
+			    <a href="#">Add custom paragraph</a>
+		    </p>    
+		</div>
+
+		<div class="form-group">
+        	<input type="submit" class="button" value="Continue">
+        </div>
+
+	</div>	
+
+</div>
+
+</main>
+
+
+{% endblock %}
+
+

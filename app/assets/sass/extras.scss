@@ -27,3 +27,92 @@
 	margin-top: 5px;
 }
 
+
+
+// Admin tool navigation // 
+
+// Utility nav // 
+
+.utility-nav {
+	border-bottom: 1px solid #BFC1C3;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 50px;
+}
+
+.utility-nav ul {
+	float: right;
+	list-style: none;
+	padding-top: 15px;
+}
+
+.utility-nav li {
+	display: inline;
+	margin-right: -15px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+.utility-nav li a {
+	text-decoration: none;
+}
+
+.utility-active {
+	border-bottom: 5px solid black;
+	padding-bottom: 9px;
+	text-decoration: none;
+}
+
+.service-name {
+	float: left;
+	display: inline;
+}
+
+.service-name h2 {
+	font-weight: 700;
+	font-size: 19px;
+	padding-top: 15px;
+	margin-left: -15px;
+}
+
+.environment-tag p {
+	margin-left: 125px;
+	margin-top: -25px;
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	background-color: #005EA5;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+// Left settings nav // 
+
+.left-nav {
+	font-size: 19px;
+	font-weight: 400;
+	margin-top: 10px;
+	padding-right: 30px;
+}
+
+.left-nav li {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+.left-nav li a {
+	text-decoration: none;
+}
+
+.active-left-nav {
+	font-weight: 700;
+	color: black;
+}
+
+//ends
+
+
+

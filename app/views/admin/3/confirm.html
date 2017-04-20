@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+<!-- Top navigation -->
+
+<div class="grid-row">
+    <div class="utility-nav">
+	    <div class="column-half">
+			<div class="service-name">
+				<h2>Service name</h2>
+				<div class="environment-tag"> 
+					<p>Live</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column-half">
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Transactions</a></li>
+				<li><a class="utility-active" href="#">Settings</a></li>
+			</ul>
+		</div>
+	</div>	
+</div>
+
+<!-- Left navigation -->
+<div class="grid-row">
+	<div class="column-one-third">
+		<div class="left-nav">
+		    <ul>
+			    <li><a href="#">Service name</a></li>
+			    <li><a href="#">API keys</a></li>
+			    <li><a href="#">Email notifications</a></li>
+			    <li><a href="#">3D Secure</a></li>
+			    <li><a class="active-left-nav" href="#">Set up payment link</a></li>
+		    </ul>
+		</div>
+	</div>
+
+<!-- Page content -->
+	<div class="column-two-thirds">
+		<h2 class="heading-large">The payment link has been emailed</h2>
+
+		<ul class="">
+			<li><a href="#">View outstanding payments due</a></li>
+			or
+			<li><a href="settings">Create another payment link</a></li>
+		</ul>
+		
+
+	</div>	
+
+</div>
+
+</main>
+
+
+{% endblock %}
+
+
