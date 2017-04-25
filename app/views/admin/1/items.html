@@ -49,46 +49,58 @@
 	<div class="column-two-thirds">
 		<h2 class="heading-large">Set up a payment page</h2>
 
+		
+
 		<p class="lede">
 			You can set up a payment page on GOV.UK where users can make payments online for your service.
-		</p>	
+		</p>
+
+		<div class="panel panel-border-wide">
+			<div class="data">
+			  <span class="data-item bold-xlarge">£{{data['fixed-fee']}}</span>
+			</div>  
+		</div>		
 
 		<h2 class="heading-medium">
-		  Would you like to set a fixed fee?
+		  Allow users to pay for more than one of the same item?
 		</h2>
 
-		<form method="post" class="form">
-
+		<form action="content" method="post" class="form">
 		  <div class="form-group">
 		    <fieldset>
 
-		      <legend class="visually-hidden">Would you like to set a fixed fee?</legend>
+		      <legend class="visually-hidden">Allow users to pay for more than one of the same item?</legend>
 
-		      <div class="multiple-choice" data-target="fixed-fee">
-		        <input id="fixedFeeTrue" type="radio" name="fixedFee" value="true">
-		        <label for="fixedFeeTrue">Yes</label>
+		      <div class="multiple-choice" data-target="items">
+		        <input id="itemsTrue" type="radio" name="itemsTrue" value="Yes">
+		        <label for="itemsTrue">Yes</label>
 		      </div>
-
-		      <div class="panel panel-border-narrow js-hidden" id="fixed-fee">
-		        <label class="form-label" for="fixed-fee">Amount</label>
-		        £ <input class="form-control" name="fixed-fee" type="text" id="fixed-fee">
+		      <div class="panel panel-border-narrow js-hidden" id="items">
+		        <label class="form-label" for="items">Maximum number of items?</label>
+		        <span class="form-hint">
+			    Optional
+			  </span>
+		        <input class="form-control" name="items" type="text" id="items">
 		      </div>
 
 		      <div class="multiple-choice">
-		        <input id="fixedFeeFalse" type="radio" name="fixedFee" value="false">
-		        <label for="fixedFeeFalse">No</label>
+		        <input id="itemsFalse" type="radio" name="itemsFalse" value="No">
+		        <label for="itemsFalse">No</label>
 		      </div>
-
 		    </fieldset>
-		  </div>
-
+		  </div>		
 
 		  <div class="form-group">
         	<input type="submit" class="button" value="Continue">
-          </div>
-
+        </div>
 		</form>
 
+
+
+		<!-- <p>
+			<br>
+			<a href="1/start">View your payment page</a>
+		</p>  -->
 
 	</div>	
 

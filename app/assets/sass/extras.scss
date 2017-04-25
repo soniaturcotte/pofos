@@ -114,5 +114,50 @@
 
 //ends
 
+// Grey button //
+
+.grey-button {
+    background-color: #6f777b;
+    margin-left: 10px;
+
+	&:visited {
+	    background-color: #6f777b;
+	}
+
+	&:hover, &:focus {
+	    background-color: darken(#6f777b, 5%);
+	  }
+
+	&:active {
+	    top: 2px;
+	    @include box-shadow(0 0 0 #6f777b);
+	  }
+}
+
+// Full width text box // 
+
+.full-width {
+	width: 100%; 
+	margin-bottom: 10px;
+}
+
+// Confirmation box // 
+
+.govuk-box-highlight-green {
+  margin: 10px 0 30px 0;
+  padding: 1em 1em .5em 1em;
+  color: $green;
+  background: none;
+  text-align: left;
+  border: 5px $green solid;
+}
+
+.govuk-box-highlight-green p {
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+
+
 
 
