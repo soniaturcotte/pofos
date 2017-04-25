@@ -49,7 +49,7 @@
 	<div class="column-two-thirds">
 		<h2 class="heading-large">Confirm and send</h2>
 
-		<form action="success" method="post" class="form">
+		<form action="review" method="post" class="form">
 
     	<table class="check-your-answers">
 	        <!-- <thead>
@@ -118,14 +118,17 @@
 			You can pay online for your application. Once you have successfully paid, you will receive a reference number. Include the reference number with your application as proof of payment.	
 			</p> 
 		</div>	
-			<p>
-			  <a href="add-custom-paragraph">Add custom paragraph</a>
-			  {{data['custom-paragraph']}}
-			</p>	 
+		
+		<div class="form-group">
+            <label class="form-label-bold" for="custom-paragraph">
+              Add custom paragraph
+            </label>
+            <textarea class="form-control full-width" id="custom-paragraph" cols="30" rows="5"></textarea>
+	    </div>	 
 
 		<div class="form-group">
-        	<input type="submit" class="button" value="Email to applicant">
-        	<a class="button grey-button" href="/3/start" role="button">Preview</a>
+        	<input type="submit" class="button" value="Save and continue">
+        	<!-- <a class="button grey-button" href="/1/start" role="button">Preview</a> -->
         </div>
 
 	</div>	
