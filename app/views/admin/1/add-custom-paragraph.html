@@ -49,46 +49,43 @@
 	<div class="column-two-thirds">
 		<h2 class="heading-large">Set up a payment page</h2>
 
+		<form action="content" method="post" class="form">
+
 		<p class="lede">
 			You can set up a payment page on GOV.UK where users can make payments online for your service.
-		</p>	
+		</p>
+
+		<div class="panel panel-border-wide">
+			<div class="data">
+			  <span class="data-item bold-xlarge">£{{data['fixed-fee']}}</span><br>
+			  <span class="data-item bold-small">{{data['items']}} items available</span>
+			</div>  
+		</div>
 
 		<h2 class="heading-medium">
-		  Would you like to set a fixed fee?
+		  Page content
 		</h2>
 
-		<form method="post" class="form">
+		<div class="panel panel-border-wide">
+			<p>
+			You can pay online for your application. Once you have successfully paid, you will receive a reference number. Include the reference number with your application as proof of payment.	
+			</p> 
+		</div>	
 
-		  <div class="form-group">
-		    <fieldset>
+		<div class="form-group">
+            <label class="form-label-bold" for="custom-paragraph">
+              Add custom paragraph
+            </label>
+            <textarea class="form-control full-width" id="custom-paragraph"></textarea>
+	    </div>
 
-		      <legend class="visually-hidden">Would you like to set a fixed fee?</legend>
-
-		      <div class="multiple-choice" data-target="fixed-fee">
-		        <input id="fixedFeeTrue" type="radio" name="fixedFee" value="true">
-		        <label for="fixedFeeTrue">Yes</label>
-		      </div>
-
-		      <div class="panel panel-border-narrow js-hidden" id="fixed-fee">
-		        <label class="form-label" for="fixed-fee">Amount</label>
-		        £ <input class="form-control" name="fixed-fee" type="text" id="fixed-fee">
-		      </div>
-
-		      <div class="multiple-choice">
-		        <input id="fixedFeeFalse" type="radio" name="fixedFee" value="false">
-		        <label for="fixedFeeFalse">No</label>
-		      </div>
-
-		    </fieldset>
-		  </div>
+		<div class="form-group">
+        	<input type="submit" class="button" value="Save and continue">
+        	<!-- <a class="button grey-button" href="/1/start" role="button">Preview</a> -->
+        </div>
 
 
-		  <div class="form-group">
-        	<input type="submit" class="button" value="Continue">
-          </div>
-
-		</form>
-
+		
 
 	</div>	
 
